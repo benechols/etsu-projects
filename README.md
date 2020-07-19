@@ -1,4 +1,4 @@
-# etsu-projects
+# ETSU Projects
 Descriptions of some of the various projects created and maintained in my role as a Senior Software Engineer for East Tennessee State University. This is just a small subset of the 29 custom built websites currently running in C# .NET 4.x and 30 services running mostly in .NET Core (2.x & 3.x) but a few still on .NET 4.x and a few in Python. On most of those I am the full stack developer including any and all requirements gathering all the way through long term support. All websites utilize the ASP.NET Razor engine, jQuery, Bootstap and a host of other 3rd party javascript libraries. The goal is to create all sites to work as simply and as error free as possible so that training can be kept to a minimum and that everyone who might use them should be able to without any questions. Some sites I've created are used heavily by every employee and student. Future plans include migrating the .NET 4.x sites to .NET 5 next year upon its first LTS release.
 
 
