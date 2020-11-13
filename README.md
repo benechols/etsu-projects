@@ -12,7 +12,7 @@ A full-fledged identity management solution. This takes data from the ERP in Ora
   * Exchange
   * Custom APIs
 
-Most calls are done through provided libraries or APIs but some tasks within Azure and Exchange can only be completed with Powershell. All tasks are fully logged so at any point a history of every task performed upon a user can be retrieved. The system also auto retries, with delays, tasks for issues such as service outages and only bubbles up errors after multiple failures. Management of most of the access a role is granted is handled in an accompanying site. There bulk tasks can also be performed on everyone within a role in case of new permissions granted.
+Most calls are done through provided libraries or APIs but some tasks within Azure and Exchange can only be completed with Powershell. All tasks are fully logged so at any point a history of every task performed upon a user can be retrieved. The system also auto retries, with delays, tasks for issues such as service outages and only bubbles up errors after multiple failures. Management of most of the access a role is granted is handled in an accompanying site. There are bulk tasks can also be performed on everyone within a role in case of new permissions granted.
 
 
 ## Data API
@@ -30,16 +30,16 @@ When I entered the position, I had to maintain about a dozen different SSIS pack
 ## Core Library
 All websites utilize a core library of functionality to reduce the need for duplicate coding. As monolithic libraries are largely a thing of the past due to the several obvious drawbacks my next main goal is to break it out into microservices. Time constraints are an issue and the only one I have tackled thus far is Logging which brought a 5x performance increase within applications when simply writing a log. This is available as an internal NuGet repository that I set up. It handles all the common tasks needed for most sites such as:
   * Authentication & Security
-  * Email, Twilio, Slack
+  * Messaging via Email, Twilio, and Slack
   * Files (S3)
   * Forms & Workflows
   * Logging
   * Settings
-  * etc
+  * and many others
 
 
 ## Website Template
-I created the template project when I started working at ETSU as the group did not have one and every programmer's websites had different base functionality and look and feel. The template is not only a starter template available within Visual Studio but also a NuGet package so any updates or new functionality can be rolled out to any existing site with a simple package update. This contains all of the basic work needed to get a new site up and running such as authentication pages, settings for admins, global error handling, etc. This allows simple one-page sites to be created in less than an hour or so depending on the complexity of the new site.
+I created the template project when I started working at ETSU as the group did not have one and every programmer's webapps had different base functionality and look and feel. The template is not only a starter template available within Visual Studio but also a NuGet package so any updates or new functionality can be rolled out to any existing site with a simple package update. This contains all of the basic work needed to get a new site up and running such as authentication pages, settings for admins, global error handling, etc. This allows simple one-page sites to be created in less than an hour or so depending on the complexity of the new site.
 
 
 ## Workflows
